@@ -15,11 +15,18 @@ const Appbar = (props: Props) => {
       style={{
         padding: "10px 10px",
         display: "flex",
+        flexWrap: "wrap",
         justifyContent: "end",
         gap: "4px",
       }}
     >
-      <div>{JSON.stringify(session)}</div>
+      <div
+        style={{
+          textWrap: "wrap",
+        }}
+      >
+        {JSON.stringify(session)}
+      </div>
       <button
         style={{
           backgroundColor: "#1750f0",
